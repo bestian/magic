@@ -12,10 +12,10 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          變魔術
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>第1版</div>
       </q-toolbar>
     </q-header>
 
