@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run build
+quasar build -m pwa --modern
 
 # navigate into the build output directory
-cd dist
+cd dist/pwa
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:bestian/vue_svg_game.git master:gh-pages
+git push -f git@github.com:3dw/q-words.git master:gh-pages
 
 cd -
