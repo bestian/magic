@@ -34,6 +34,7 @@
         </q-item-label>
         <q-item to ="/">苜頁</q-item>
         <q-item to ="/rule">魔術師三原則</q-item>
+        <q-item to ="/band">橡皮筋魔術</q-item>
         <q-item to ="/great">神奇魔術</q-item>
       </q-list>
     </q-drawer>
