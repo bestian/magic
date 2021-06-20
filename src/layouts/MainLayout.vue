@@ -15,7 +15,7 @@
           變魔術
         </q-toolbar-title>
 
-        <div>第1版</div>
+        <q-btn color = "secondary" @click="copy()">複製連結</q-btn>
       </q-toolbar>
     </q-header>
 
@@ -32,7 +32,7 @@
         >
           項目
         </q-item-label>
-        <q-item to ="/">苜頁</q-item>
+        <q-item to ="/">首頁</q-item>
         <q-item to ="/rule">魔術師三原則</q-item>
         <q-item to ="/band">橡皮筋魔術</q-item>
         <q-item to ="/great">神奇魔術</q-item>
@@ -46,11 +46,26 @@
 </template>
 
 <script>
+
+import { copyToClipboard } from 'quasar'
+
 export default {
   name: 'MainLayout',
   data () {
     return {
       leftDrawerOpen: false,
+    }
+  },
+  methods: {
+    copy() {
+      copyToClipboard('https://bestian.github.io/magic/')
+      .then(() => {
+        window.alert('連結已複製')
+        // success!
+      })
+      .catch(() => {
+        // fail
+      })
     }
   }
 }
