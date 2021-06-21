@@ -22,6 +22,10 @@ export default {
           src: './4A出現.mp4'
         },
         {
+          n: '祥龍翻身',
+          src: './祥龍翻身.mp4'
+        },
+        {
           n: '古典迫牌',
           iframe: 'https://www.youtube.com/embed/yoaeKKNDW5Y'
         },
