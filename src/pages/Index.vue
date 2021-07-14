@@ -26,6 +26,10 @@ export default {
           src: './祥龍翻身.mp4'
         },
         {
+          n: '銅板魔術棒魔術',
+          src: './銅板魔術棒魔術.mp4'
+        },
+        {
           n: '古典迫牌',
           iframe: 'https://www.youtube.com/embed/yoaeKKNDW5Y'
         },
